@@ -1,0 +1,35 @@
+1. http (http 기준)
+    - post
+    - put
+    - get
+    - delete
+2. db (query 기준)
+    - insert
+    - update
+    - find
+    - delete
+3. file (shared preference 기준)
+    - put
+    - put 공통
+    - get
+    - remove
+4. repository
+    - save
+    - update
+    - get
+    - delete
+5. class
+    - {description}{component}
+    - ex) WriteFragment / NotificationService ..
+6. layout
+    - {component}{description}
+    - ex) fragment_write / activity_modify / {bottom_sheet}_{person_preview}
+7. drawable
+    - {what}_{where}_{description}_{size} : 순서만 이대로 중간중간 없어도됨
+    - 아이콘의 ic 는 필수로 들어가는게 좋을듯
+    - where/description 은 무조건 필수 (where 공통은 common)
+    - ex) {ic}_{common}_{back_arrow} / {common}_{btn_red}_{small}
+            {splash}_{background}
+8. color/string
+    - {where}_{description}
+    - ex) {splash}_{title} = "타이틀" / {common}_{big_button} = "#ffffffff"

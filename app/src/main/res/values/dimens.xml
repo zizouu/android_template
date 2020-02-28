@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- common -->
+    <dimen name="common_list_divide_margin">25dp</dimen>
+
+    <!-- templates -->
+    <dimen name="templates_first_item_margin">30dp</dimen>
+
+    <!-- templates item -->
+    <dimen name="templates_item_card_radius">24dp</dimen>
+</resources>

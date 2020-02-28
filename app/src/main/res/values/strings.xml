@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name_release">Template</string>
+    <string name="app_name_dev">Template_dev</string>
+
+    <!-- build -->
+    <string name="scheme_name">scheme_name</string>
+    <string name="host_name">zizou</string>
+
+    <!-- global -->
+    <string name="database_name">template</string>
+
+    <!-- common -->
+    <string name="common_back_button_press">\'뒤로\' 버튼을 한번 더 누르시면 종료됩니다.</string>
+    <string name="common_error">일시적인 에러발생</string>
+</resources>
