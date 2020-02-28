@@ -1,6 +1,7 @@
 package com.zizou.template.common.di
 
 import com.zizou.template.main.viewmodel.MainViewModelFactory
+import com.zizou.template.motion.viewmodel.MotionViewModelFactory
 import com.zizou.template.template.repository.TemplateRepository
 import com.zizou.template.template.viewmodel.TemplateViewModelFactory
 import com.zizou.template.templates.viewmodel.TemplatesViewModelFactory
@@ -27,4 +28,10 @@ class ViewModelFactoryModule {
 
     ): TemplatesViewModelFactory =
         TemplatesViewModelFactory()
+
+    @Provides
+    fun provideMotionViewModelFactory(
+
+    ): MotionViewModelFactory =
+        MotionViewModelFactory()
 }

@@ -11,6 +11,7 @@ import com.zizou.template.launch.model.Landing
 import com.zizou.template.main.view.listener.OnRequestView
 import com.zizou.template.main.viewmodel.MainViewModel
 import com.zizou.template.main.viewmodel.MainViewModelFactory
+import com.zizou.template.motion.view.MotionFragment
 import com.zizou.template.template.view.TemplateFragment
 import com.zizou.template.templates.view.TemplatesFragment
 import javax.inject.Inject
@@ -39,7 +40,7 @@ class MainActivity : BaseActivity(), OnRequestView {
         val landing = intent.getSerializableExtra(CommonConst.KEY_LANDING) as? Landing?
         processLanding(landing)
 
-        showTemplates()
+        showMotion()
     }
 
     override fun initializeUi() {
@@ -74,6 +75,11 @@ class MainActivity : BaseActivity(), OnRequestView {
         }
 
         replaceFragment(fragment, tag = TemplatesFragment.TAG, isSlideAnim = true)
+    }
+
+    override fun showMotion() {
+        val fragment = MotionFragment()
+        replaceFragment(fragment, tag = MotionFragment.TAG, isSlideAnim = true)
     }
 
     private fun replaceFragment(

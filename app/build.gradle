@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion rootProject.ext.compile_sdk_version
     defaultConfig {
         applicationId "com.zizou.template"
         minSdkVersion rootProject.ext.min_sdk_version

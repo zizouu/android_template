@@ -3,6 +3,7 @@ package com.zizou.template.common.di
 import com.zizou.template.launch.LaunchActivity
 import com.zizou.template.launch.SplashActivity
 import com.zizou.template.main.view.MainActivity
+import com.zizou.template.motion.view.MotionFragment
 import com.zizou.template.template.view.TemplateFragment
 import com.zizou.template.templates.view.TemplatesFragment
 import dagger.Module
@@ -24,4 +25,7 @@ abstract class ViewBinderModule {
 
     @ContributesAndroidInjector
     abstract fun bindTemplatesFragment(): TemplatesFragment
+
+    @ContributesAndroidInjector
+    abstract fun bindMotionFragment(): MotionFragment
 }
